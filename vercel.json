@@ -1,10 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "reading.js", "use": "@vercel/node" }
   ],
-  "functions": {
-    "reading.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "routes": [
+    { "src": "/api/reading", "dest": "/reading.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
+
