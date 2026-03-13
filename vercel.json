@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "reading.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/reading", "dest": "/reading.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
