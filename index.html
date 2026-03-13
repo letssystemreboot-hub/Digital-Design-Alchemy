@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Design Alchemy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🔮 Digital Design Alchemy</h1>
+
+<textarea id="challenge" placeholder="Describe your design challenge..."></textarea>
+
+<br/>
+<button onclick="drawCard()">Reveal Insight</button>
+
+<div class="card" onclick="flipCard()">
+  <div class="card-inner" id="card">
+
+    <div class="card-front">
+      <h2>Oracle Card</h2>
+      <p>Click to reveal</p>
+    </div>
+
+    <div class="card-back">
+      <p id="insight">Waiting for insight...</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
