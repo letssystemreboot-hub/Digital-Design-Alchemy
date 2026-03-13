@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Digital Design Alchemy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔮 Digital Design Alchemy</h1>
+<p class="subtitle">Ask the Oracle of Design</p>
+
+<textarea id="challenge" placeholder="Describe your design challenge..."></textarea>
+
+<button onclick="drawCard()">Reveal Oracle Insight</button>
+
+<div class="card-area">
+
+<div class="card" onclick="flipCard()">
+<div class="card-inner" id="card">
+
+<div class="card-front">
+<div class="symbol">✦</div>
+<h2>Design Oracle</h2>
+<p>Click to reveal wisdom</p>
+</div>
+
+<div class="card-back">
+<p id="insight">Your insight will appear here...</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
